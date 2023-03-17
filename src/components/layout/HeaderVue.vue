@@ -1,8 +1,8 @@
 <template>
-  <div>
-    <nav class="navbar bg-dark" data-bs-theme="dark">
+  <div id="header">
+    <nav class="navbar navbar-dark bg-dark">
       <div class="container-fluid row">
-        <div class="col-7"><a class="navbar-brand ms-3" href="/">박깅이의 블로그</a></div>
+        <div class="col-7 d-flex justify-content-left"><a class="navbar-brand ms-3" href="/">박깅이의 블로그</a></div>
 
         <div class="col-2"><a class="" href="/logout" th:if="${session.loginMember}">로그아웃</a></div>
 
@@ -12,6 +12,7 @@
           </button>
         </div>
 
+        <!--      <div class="col-md-3 d-none d-lg-block">-->
         <div class="col-2 d-none">
           <form class="d-flex" role="search" style="float: right">
             <input class="form-control me-2 w-auto" type="search" placeholder="Search" aria-label="Search" style="" />
@@ -24,7 +25,7 @@
 </template>
 <script>
 export default {
-  name: 'headerView',
+  name: 'HeaderVue',
   components: {},
   data() {
     return {
@@ -38,3 +39,8 @@ export default {
   methods: {}
 }
 </script>
+<style scoped>
+#header {
+  height: 50px !important;
+}
+</style>

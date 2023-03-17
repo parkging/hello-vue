@@ -1,42 +1,33 @@
 <template>
-  <nav id="app">
-    <!-- <router-link to="/">Home</router-link> | <router-link to="/about">About</router-link> | <router-link to="/databinding/string">String</router-link> |
-    <router-link to="/databinding/html">Html</router-link> -->
-    <div>
-      <Header></Header>
-    </div>
-  </nav>
+  <!-- <nav>
+    <router-link to="/">Home</router-link> |
+    <router-link to="/about">About</router-link>
+  </nav> -->
   <router-view />
 </template>
-<script>
-import Header from './components/layout/Header.vue'
-export default {
-  name: 'App',
-  components: {
-    Header
-  }
-}
-</script>
 
 <style>
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap');
+
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
+  /* font-family: Avenir, Helvetica, Arial, sans-serif; */
+  font-family: 'Noto Sans KR', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
+  /* text-align: center; */
+  /* color: #2c3e50; */
 }
 
 nav {
-  padding: 30px;
+  /* padding: 30px; */
 }
 
 nav a {
-  font-weight: bold;
-  color: #2c3e50;
+  /* font-weight: bold;
+  color: #2c3e50; */
 }
 
 nav a.router-link-exact-active {
-  color: #42b983;
+  /* color: #42b983; */
 }
 </style>
