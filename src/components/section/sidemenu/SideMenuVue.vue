@@ -20,8 +20,8 @@
   </div>
 </template>
 <script>
-import ProfileVue from '@/components/layout/section/sidemenu/ProfileVue.vue'
-import CategoryVue from '@/components/layout/section/sidemenu/CategoryVue.vue'
+import ProfileVue from '@/components/section/sidemenu/ProfileVue.vue'
+import CategoryVue from '@/components/section/sidemenu/CategoryVue.vue'
 export default {
   name: 'SideMenuVue',
   components: {

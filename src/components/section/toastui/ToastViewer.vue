@@ -1,5 +1,5 @@
 <template>
-  <div></div>
+  <div>viewer</div>
 </template>
 <script>
 export default {

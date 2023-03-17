@@ -1,8 +1,11 @@
-import { createRouter, createWebHistory } from 'vue-router'
+import Vue from 'vue'
+import VueRouter from 'vue-router'
 import HomeView from '../views/HomeView.vue'
 
-const BoardVue = () => import(/* webpackChunkName: "board" */ '@/components/layout/section/board/BoardVue.vue')
-const PostViewerVue = () => import(/* webpackChunkName: "post" */ '@/components/layout/section/post/PostViewerVue.vue')
+Vue.use(VueRouter)
+
+const BoardVue = () => import(/* webpackChunkName: "board" */ '@/components/section/board/BoardVue.vue')
+const PostViewerVue = () => import(/* webpackChunkName: "post" */ '@/components/section/post/PostViewerVue.vue')
 
 const routes = [
   {
@@ -25,12 +28,18 @@ const routes = [
   {
     path: '/editor',
     name: 'editor',
-    component: import(/* webpackChunkName: "editor" */ '@/components/layout/section/toastui/ToastEditor.vue')
+    component: import(/* webpackChunkName: "editor" */ '@/components/section/toastui/ToastEditor.vue')
+  },
+  {
+    path: '/viewer',
+    name: 'viewer',
+    component: import(/* webpackChunkName: "editor" */ '@/components/section/toastui/ToastViewer.vue')
   }
 ]
 
-const router = createRouter({
-  history: createWebHistory(process.env.BASE_URL),
+const router = new VueRouter({
+  mode: 'history',
+  base: process.env.BASE_URL,
   routes
 })
 

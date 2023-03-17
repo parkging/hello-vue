@@ -11,8 +11,8 @@
   </div>
 </template>
 <script>
-// import BoardVue from '@/components/layout/section/board/BoardVue.vue'
-import SideMenuVue from '@/components/layout/section/sidemenu/SideMenuVue.vue'
+// import BoardVue from '@/components/section/board/BoardVue.vue'
+import SideMenuVue from '@/components/section/sidemenu/SideMenuVue.vue'
 export default {
   name: 'MainSection',
   components: {

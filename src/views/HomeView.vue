@@ -10,9 +10,9 @@
 
 <script>
 // @ is an alias to /src
-import Header from '@/components/layout/HeaderVue.vue'
-import MainSection from '@/components/layout/section/MainVue.vue'
-import Footer from '@/components/layout/FooterVue.vue'
+import Header from '@/components/HeaderVue.vue'
+import MainSection from '@/components/section/MainVue.vue'
+import Footer from '@/components/FooterVue.vue'
 
 export default {
   name: 'HomeView',
