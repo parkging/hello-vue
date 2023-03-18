@@ -28,12 +28,12 @@ const routes = [
   {
     path: '/editor',
     name: 'editor',
-    component: import(/* webpackChunkName: "editor" */ '@/components/section/toastui/ToastEditor.vue')
+    component: () => import(/* webpackChunkName: "editor" */ '@/components/section/toastui/ToastEditor.vue')
   },
   {
     path: '/viewer',
     name: 'viewer',
-    component: import(/* webpackChunkName: "editor" */ '@/components/section/toastui/ToastViewer.vue')
+    component: () => import(/* webpackChunkName: "editor" */ '@/components/section/toastui/ToastViewer.vue')
   }
 ]
 
